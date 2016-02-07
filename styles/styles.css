@@ -23,52 +23,63 @@ body{
 .bigBox{
 	width: 100%;
 /*	height: 435px;*/
-	border:	3px solid black;
+	border:	3px solid #47a3da;
 
 }
 
 .shirtBox{
 	max-width: 100%;
-	border: 3px solid green;
+	border: 2px solid #47a3da;
 }
 
 .shirtBox img{
 	width: 100%;
-	height: 300px;
+	height: 500px;
 }
 
 .click{
 	width: 20%;
-	border: 3px solid orange;
+	border: 3px solid #47a3da;
 	/*need to move top-right*/
 }
 
-/*--------------*/
+/*-----------Icon Row--------------------*/
 
 .iconButton{
 	width: 20%;
 	height: 10%;
-	border: 3px solid orange;
+	border: 3px solid #47a3da;
 	padding: 3px 3px 3px 3px;
+	background-color: #FFFFFF;
+	text-align: center;
+	font-size: 24px;
+
 }
 
+.material-icons{
+	font-size: 64px;
+	color: #47a3da;
+}
 
 .arrow:hover{
 	outline: none;
-	background-color: green;
+	background-color: #47a3da;
 }
+
 
 .heart:hover{
 	outline: none;
-	background-color: red;
+	background-color: #47a3da;
 }
 
 .cart:hover{
 	outline:none;
-	background-color: green;
+	background-color: #47a3da;
 }
 
-/*--Size checkbox-----*/
+.material-icons.md-24 .cart{ font-size: 24px; }
+
+/*--Size Icon Hover-----------------------*/
 
 
 /*
@@ -82,52 +93,80 @@ div.size img{
 	/*background-color: purple;*/
 /*	min-width: 160px;*/
 	/*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-	padding: 12px 16px;
+	/*padding: 12px 16px;*/
 	z-index: 2;
 	max-width: 100%;
 	width: 100px;
-	opacity: 0px;
+	/*height: 100%;*/
+	opacity: 1px;
 	transition: all 2s;
 	visibility: hidden;
+	margin-bottom: -275px;
+	border: 3px solid #47a3da;
+	/*transform: translateX(-50%);*/
 }
 
-
 p:hover ~ .img_size {
-	margin-top: -200px;
-	/*transition: all 2s*/
-	visibility: visible;
+	margin-top: -300px;
+	visibility: visible; 
 }
 
 p{
-	color: #e74c3c;
-	font-size:15px;
+	color: #47a3da;
+	font-size: 48px;
 	text-align: center; 
 	z-index: 1;
-	
+	background-color: #FFFFFF; 
+	margin-top: -1px;
+}
 
+ p:hover{
+ 	background-color: #47a3da;
+ }
+
+.size{
+	background-color: #FFFFFF;
+}
+
+/*--Color Icon Hover----------------*/
+
+.color:hover{
+	background-color: #47a3da;
 }
 
 
-/*--Color checkbox-----*/
 
+/*----------------------------------*/
 
-
-/*--------------------*/
+/*----Info Line Styling-------------*/
 
 .infoLine{
 	width:100%;
-	border: 3px solid purple;
+	border: 3px solid #47a3da;
 }
 
 .name{
 	width: 50%;
 	text-align: left;
+	font-size: 26px;
+	color:#47a3da;
 }
 
 .price{
 	width: 50%;
-	text-align: right;	
+	text-align: right;
+	font-size: 26px;
+	color: #47a3da;
+
 }
+
+/*--------Shirt - flipping-------------*/
+
+/*http://tympanus.net/Blueprints/ProductGridLayout/images/1_front.png*/
+/*
+http://tympanus.net/Blueprints/ProductGridLayout/images/1_back.png*/
+
+
 
 
 /*------media layout styling-------*/
