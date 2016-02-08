@@ -116,21 +116,21 @@ body{
 
 div.size img{
 	/*display: none;*/
-	position: relative;
+	position: absolute; 
 	/*background-color: purple;*/
 /*	min-width: 160px;*/
 	/*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
 	/*padding: 12px 16px;*/
-	z-index: 2;
-	max-width: 100%;
-	width: 100px;
+	z-index: 2; 
+	/*max-width: 100%; 
+	width: 100px; */
 	/*height: 100%;*/
 	opacity: 1px;
-	transition: all 2s;
+/*	transition: all 2s;*/
 	visibility: hidden;
-	margin-bottom: -275px;
-	border: 3px solid #47a3da;
-	/*transform: translateX(-50%);*/
+	/*margin-bottom: -275px;*/
+	border: 3px solid #47a3da; 
+	transform: translateX(-50%);
 }
 
 p:hover ~ .img_size {
