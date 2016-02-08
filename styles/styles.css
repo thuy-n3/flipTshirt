@@ -31,6 +31,8 @@ body{
 .shirtBox{
 	max-width: 100%;
 	border: 1px solid #47a3da;
+	height: 386px;
+	position: relative;
 }
 
 .shirtBox img{
@@ -39,11 +41,18 @@ body{
 	vertical-align: middle;
 }
 
+/*-----------------------------------*/
+
 .click{
-	width: 20%;
+	width: 50px;
 	border: 1px solid #47a3da;
-	/*need to move top-right*/
+	position: absolute;
+	top: 0;
+	right: 0;
+
+
 }
+
 
 /*-----------Icon Row--------------------*/
 
@@ -100,10 +109,6 @@ body{
 	text-align: center;
 }
 
-.material-icons.md-24:hover{
-
-}
-
 
 
 /*--Size Icon Hover-----------------------*/
@@ -150,6 +155,7 @@ p{
  p:hover{
  	background-color: #47a3da;
  }
+
  
 /*.size:hover{
 	background-color: #FFFFFF;
@@ -159,7 +165,7 @@ p{
 
 .color:hover{
 	background-color: #47a3da;
-}s
+}
 
 .color .material-icons{
 	font-size: 60px;
@@ -181,37 +187,8 @@ p{
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0;
+	bottom: 100% ;
 }
-
-
-
-/*.color:hover > .color_menu{
-	display: none;
-}    -------Note: above make .color_menu disappear when hover
-*/
-
-
-
-
-
-
-
-/*p:hover ~ ul{
-	margin-top: -100px;
-	visibility: visible;
-}
-*/
-
-/*
-pink: #E577AA
-blue: #65B3E2
-green: #7ABE93
-orange: #E5B178
-*/
-
-
-
-
 
 /*----------------------------------*/
 
@@ -249,7 +226,7 @@ http://tympanus.net/Blueprints/ProductGridLayout/images/1_back.png*/
 
 /*------media layout styling-------*/
 
-@media (min-width: 608px){
+@media (min-width: 300px){
 	.bigBox{
 		width: 40.3333%;
 		/*height: 40.3333%;*/
