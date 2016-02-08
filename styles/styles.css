@@ -6,6 +6,7 @@
 
 body{
 	font-size: 0;
+	font-family: sans-serif;
 }
 
 .align-children{
@@ -23,23 +24,24 @@ body{
 .bigBox{
 	width: 100%;
 /*	height: 435px;*/
-	border:	3px solid #47a3da;
+	border:	1px solid #47a3da;
 
 }
 
 .shirtBox{
 	max-width: 100%;
-	border: 2px solid #47a3da;
+	border: 1px solid #47a3da;
 }
 
 .shirtBox img{
-	width: 100%;
-	height: 500px;
+	max-width: 100%;
+/*	height: 300px;*/
+	vertical-align: middle;
 }
 
 .click{
 	width: 20%;
-	border: 3px solid #47a3da;
+	border: 1px solid #47a3da;
 	/*need to move top-right*/
 }
 
@@ -48,22 +50,29 @@ body{
 .iconButton{
 	width: 20%;
 	height: 10%;
-	border: 3px solid #47a3da;
-	padding: 3px 3px 3px 3px;
+	border: 1px solid #47a3da;
+	/*padding: 3px 3px 3px 3px;*/
 	background-color: #FFFFFF;
 	text-align: center;
 	font-size: 24px;
-
+	/*overflow: inherit;*/
 }
 
 .material-icons{
-	font-size: 64px;
+	font-size: 40px;
 	color: #47a3da;
+	margin: 15%;
 }
+
+.material-icons:hover{
+	color: #FFFFFF;
+}
+
 
 .arrow:hover{
 	outline: none;
 	background-color: #47a3da;
+	/*color: rgba(255, 255, 255, 1); */
 }
 
 
@@ -77,7 +86,16 @@ body{
 	background-color: #47a3da;
 }
 
-.material-icons.md-24 .cart{ font-size: 24px; }
+/*----google icon----------------------*/
+.material-icons.md-24 .cart{ 
+	font-size: 24px; 
+	text-align: center;
+
+
+	
+
+
+}
 
 /*--Size Icon Hover-----------------------*/
 
@@ -113,11 +131,11 @@ p:hover ~ .img_size {
 
 p{
 	color: #47a3da;
-	font-size: 48px;
+	font-size: 25px;
 	text-align: center; 
 	z-index: 1;
 	background-color: #FFFFFF; 
-	margin-top: -1px;
+	margin: 15%;
 }
 
  p:hover{
@@ -134,7 +152,17 @@ p{
 	background-color: #47a3da;
 }
 
+.color .material-icons{
+	font-size: 60px;
+	margin: 5%;
+	
 
+}
+
+p:hover ~ ul{
+	margin-top: -100px;
+	visibility: visible;
+}
 
 /*----------------------------------*/
 
@@ -142,7 +170,7 @@ p{
 
 .infoLine{
 	width:100%;
-	border: 3px solid #47a3da;
+	border: 1px solid #47a3da;
 }
 
 .name{
@@ -158,9 +186,10 @@ p{
 	font-size: 26px;
 	color: #47a3da;
 
+
 }
 
-/*--------Shirt - flipping-------------*/
+/*-------- 3D Shirt - flipping-------------*/
 
 /*http://tympanus.net/Blueprints/ProductGridLayout/images/1_front.png*/
 /*
@@ -174,5 +203,6 @@ http://tympanus.net/Blueprints/ProductGridLayout/images/1_back.png*/
 @media (min-width: 608px){
 	.bigBox{
 		width: 40.3333%;
+		/*height: 40.3333%;*/
 	}
 	
