@@ -68,34 +68,43 @@ body{
 	color: #FFFFFF;
 }
 
+/*---------------------------------------*/
 
 .arrow:hover{
 	outline: none;
 	background-color: #47a3da;
-	/*color: rgba(255, 255, 255, 1); */
 }
 
+
+/*.material-icons.md-24{
+	background-color: #47a3da;
+}*/
+
+/*-----------------------------------------*/
 
 .heart:hover{
 	outline: none;
 	background-color: #47a3da;
 }
 
+
+
+/*------------------------------------------*/
 .cart:hover{
 	outline:none;
 	background-color: #47a3da;
 }
 
-/*----google icon----------------------*/
 .material-icons.md-24 .cart{ 
 	font-size: 24px; 
 	text-align: center;
+}
 
-
-	
-
+.material-icons.md-24:hover{
 
 }
+
+
 
 /*--Size Icon Hover-----------------------*/
 
@@ -141,28 +150,68 @@ p{
  p:hover{
  	background-color: #47a3da;
  }
-
-.size{
+ 
+/*.size:hover{
 	background-color: #FFFFFF;
-}
+}*/
 
 /*--Color Icon Hover----------------*/
 
 .color:hover{
 	background-color: #47a3da;
-}
+}s
 
 .color .material-icons{
 	font-size: 60px;
 	margin: 5%;
-	
-
 }
 
-p:hover ~ ul{
+.color:hover .color_menu{
+	visibility: visible;
+	opacity: 1.0;
+}
+
+.color{
+	position: relative;
+}
+
+.color_menu{
+	position: absolute;
+	top: -100px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+}
+
+
+
+/*.color:hover > .color_menu{
+	display: none;
+}    -------Note: above make .color_menu disappear when hover
+*/
+
+
+
+
+
+
+
+/*p:hover ~ ul{
 	margin-top: -100px;
 	visibility: visible;
 }
+*/
+
+/*
+pink: #E577AA
+blue: #65B3E2
+green: #7ABE93
+orange: #E5B178
+*/
+
+
+
+
 
 /*----------------------------------*/
 
