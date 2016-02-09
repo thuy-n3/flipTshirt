@@ -31,15 +31,45 @@ body{
 .shirtBox{
 	max-width: 100%;
 	border: 1px solid #47a3da;
-	height: 386px;
 	position: relative;
+	padding: 20px;
 }
 
 .shirtBox img{
 	max-width: 100%;
 /*	height: 300px;*/
 	vertical-align: middle;
+	transition: all .2s;
 }
+
+.shirt-flipper{
+	
+
+	position: relative;
+}
+
+.back{
+	position: absolute;
+	z-index: 2;
+	backface-visibility: hidden;
+	transform: rotateY(180deg)
+}
+
+	.click:hover ~ .shirt-flipper .back{
+		transform: rotateY(0deg);
+	}
+
+
+.front{
+	position: relative;
+	z-index: 1;
+
+}
+
+.click:hover ~ .shirt-flipper .front{
+		transform: rotateY(180deg);
+	}
+
 
 /*-----------------------------------*/
 
@@ -49,12 +79,20 @@ body{
 	position: absolute;
 	top: 0;
 	right: 0;
+	z-index: 3;
+}
 
+.click:hover{
+	background: #47a3da;
+}
 
+.click:hover > .round{
+	color: #FFFFFF;
 }
 
 
 /*-----------Icon Row--------------------*/
+
 
 .iconButton{
 	width: 20%;
@@ -64,7 +102,7 @@ body{
 	background-color: #FFFFFF;
 	text-align: center;
 	font-size: 24px;
-	/*overflow: inherit;*/
+
 }
 
 .material-icons{
@@ -73,35 +111,50 @@ body{
 	margin: 15%;
 }
 
-.material-icons:hover{
+/*.material-icons:hover{
 	color: #FFFFFF;
+}*/
+
+.iconButton:hover{
+	background: #47a3da;
 }
 
 /*---------------------------------------*/
 
-.arrow:hover{
+/*.arrow:hover{
+	background-color: #47a3da;
+}*/
+
+.arrow:hover > .md-24{
+	color: #FFFFFF;
+}
+
+/*.arrow:hover{
 	outline: none;
 	background-color: #47a3da;
 }
-
-
+*/
 /*.material-icons.md-24{
 	background-color: #47a3da;
 }*/
 
 /*-----------------------------------------*/
 
-.heart:hover{
-	outline: none;
+/*.heart:hover{
 	background-color: #47a3da;
+}*/
+
+.heart:hover > .md-24{
+	color: #FFFFFF;
 }
 
-
-
 /*------------------------------------------*/
-.cart:hover{
-	outline:none;
+/*.cart:hover{
 	background-color: #47a3da;
+}*/
+
+.cart:hover > .md-24{
+	color: #FFFFFF
 }
 
 .material-icons.md-24 .cart{ 
@@ -140,7 +193,8 @@ div.size img{
 
 p:hover ~ .img_size {
 	margin-top: -300px;
-	visibility: visible; 
+	visibility: visible;
+
 }
 
 p{
@@ -148,24 +202,46 @@ p{
 	font-size: 25px;
 	text-align: center; 
 	z-index: 1;
-	background-color: #FFFFFF; 
-	margin: 15%;
+	/*background-color: #FFFFFF; 
+*/	margin: 15%;
 }
 
- p:hover{
+/*.size:hover{
+	background-color: #47a3da;
+}*/
+
+.size:hover > p{
+	color: #FFFFFF;
+}
+
+/*p:hover > .img_size{
+	color: #FFFFFF;
+}
+*/
+/*.img_size:hover > p{
+	color: #FFFFFF;
+}*/
+/* p:hover{
  	background-color: #47a3da;
  }
-
+*/
  
 /*.size:hover{
 	background-color: #FFFFFF;
 }*/
 
 /*--Color Icon Hover----------------*/
-
+/*
 .color:hover{
 	background-color: #47a3da;
+}*/
+
+.color:hover > .material-icons{
+	color: #FFFFFF;
 }
+
+
+
 
 .color .material-icons{
 	font-size: 60px;
@@ -187,7 +263,8 @@ p{
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0;
-	bottom: 100% ;
+	bottom: 100%;
+	border: 2px solid #47a3da;;
 }
 
 /*----------------------------------*/
@@ -226,9 +303,9 @@ http://tympanus.net/Blueprints/ProductGridLayout/images/1_back.png*/
 
 /*------media layout styling-------*/
 
-@media (min-width: 300px){
+@media (min-width: 800px){
 	.bigBox{
 		width: 30%;
-		/*height: 40.3333%;*/
+		/*height: 40.3333%;*
 	}
 	
