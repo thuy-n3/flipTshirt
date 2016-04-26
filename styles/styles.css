@@ -43,8 +43,6 @@ body{
 }
 
 .shirt-flipper{
-	
-
 	position: relative;
 }
 
@@ -192,9 +190,8 @@ div.size img{
 }
 
 p:hover ~ .img_size {
-	margin-top: -300px;
+	margin-top: -283px;
 	visibility: visible;
-
 }
 
 p{
@@ -206,42 +203,20 @@ p{
 */	margin: 15%;
 }
 
-/*.size:hover{
-	background-color: #47a3da;
-}*/
-
 .size:hover > p{
 	color: #FFFFFF;
 }
 
-/*p:hover > .img_size{
-	color: #FFFFFF;
-}
-*/
-/*.img_size:hover > p{
-	color: #FFFFFF;
-}*/
-/* p:hover{
- 	background-color: #47a3da;
- }
-*/
- 
-/*.size:hover{
-	background-color: #FFFFFF;
-}*/
+
+
+
 
 /*--Color Icon Hover----------------*/
-/*
-.color:hover{
-	background-color: #47a3da;
-}*/
+
 
 .color:hover > .material-icons{
 	color: #FFFFFF;
 }
-
-
-
 
 .color .material-icons{
 	font-size: 60px;
@@ -255,17 +230,28 @@ p{
 
 .color{
 	position: relative;
+	color: #E577AA;
 }
 
 .color_menu{
 	position: absolute;
-	top: -100px;
+	top: -123px;
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0;
 	bottom: 100%;
-	border: 2px solid #47a3da;;
+	border: 3px solid #47a3da;
+	z-index: 1;
+	padding-bottom: 15px;
 }
+
+/*.arrow-down{
+	width: 5px;
+	height: 5px;
+	border-right: 2px solid #47a3da;
+	border-left: 2px solid #47a3da;
+	border-top: 2px solid #47a3da;
+}*/
 
 /*----------------------------------*/
 
@@ -294,10 +280,18 @@ p{
 
 /*-------- 3D Shirt - flipping-------------*/
 
+/*blue*/
 /*http://tympanus.net/Blueprints/ProductGridLayout/images/1_front.png*/
 /*
 http://tympanus.net/Blueprints/ProductGridLayout/images/1_back.png*/
 
+/*pink*/
+/*http://tympanus.net/Blueprints/ProductGridLayout/images/2_front.png*/
+/*http://tympanus.net/Blueprints/ProductGridLayout/images/2_back.png
+
+orange
+http://tympanus.net/Blueprints/ProductGridLayout/images/3_front.png
+http://tympanus.net/Blueprints/ProductGridLayout/images/3_back.png
 
 
 
